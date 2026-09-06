@@ -31,9 +31,6 @@ dashboard/out/
 .env.local
 
 # Large model files (use git-lfs or just document where to get them)
-model/saved_models/*.pkl
-model/saved_models/*.joblib
-api/saved_models/*.pkl
-api/saved_models/*.joblib
+
 !model/saved_models/.gitkeep
 !api/saved_models/.gitkeep
