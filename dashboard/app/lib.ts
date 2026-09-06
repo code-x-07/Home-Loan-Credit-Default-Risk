@@ -14,7 +14,7 @@ export interface PredictionResult {
 export async function getPrediction(
   features: Record<string, number>
 ): Promise<PredictionResult> {
-  const response = await fetch("http://127.0.0.1:8000/predict", {
+  const response = await fetch("https://YOUR-RENDER-URL.onrender.com/predict", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ features }),
